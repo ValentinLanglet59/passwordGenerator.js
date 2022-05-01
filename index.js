@@ -7,6 +7,13 @@ let randomChars = [ 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
 'M', 'N', 'O', 'P', 'Q', 'R',  'S', 'T', 'U', 'V', 'W', 'X',
 'Y', 'Z', 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ];
 let result = []
+let buttonClicked = true
+let buttonClicked2 = true
+let buttonClicked3 = true
+let buttonClicked4 = true
+
+
+
 // firstPasswordEl.textContent = generatePasswords()
  //secondPasswordEl.textContent = generatePasswords();
 // thirdPasswordEl.textContent = generatePasswords()
@@ -25,10 +32,13 @@ let result = []
 //}
 
 function generatePasswords() {
-    for(let i = 0; i <= 8; i++) {
-        let randomResult = randomChars[Math.floor(Math.random()* 25)]
-        result.push(randomResult)
-        resultEl.textContent += randomResult
+    if (buttonClicked === true) {
+        for(let i = 0; i <= 8; i++) {
+            let randomResult = randomChars[Math.floor(Math.random()* 25)]
+            result.push(randomResult)
+            resultEl.textContent += randomResult
+            buttonClicked = false
+    }
         //firstPasswordEl.textContent += randomNumbers
         //secondPasswordEl.textContent += randomNumbers
         //thirdPasswordEl.textContent += randomNumbers
@@ -54,11 +64,14 @@ function generatePasswords() {
 
 
 function generatePasswords2() {
-    for(let i = 0; i <= 8; i++) {
+    if (buttonClicked2 === true) {
+        for(let i = 0; i <= 8; i++) {
         let randomResult = randomChars[Math.floor(Math.random()* 25)]
         result.push(randomResult)
         console.log(result)
         secondPasswordEl.textContent += randomResult
+        buttonClicked2 = false
+    }
         //firstPasswordEl.textContent += randomNumbers
         //secondPasswordEl.textContent += randomNumbers
         //thirdPasswordEl.textContent += randomNumbers
@@ -69,11 +82,14 @@ function generatePasswords2() {
 }
 
 function generatePasswords3() {
-    for(let i = 0; i <= 8; i++) {
-        let randomResult = randomChars[Math.floor(Math.random()* 25)]
-        result.push(randomResult)
-        console.log(result)
-        thirdPasswordEl.textContent += randomResult
+    if (buttonClicked3 === true) {
+        for(let i = 0; i <= 8; i++) {
+            let randomResult = randomChars[Math.floor(Math.random()* 25)]
+            result.push(randomResult)
+            console.log(result)
+            thirdPasswordEl.textContent += randomResult
+            buttonClicked3 = false
+    }
         //firstPasswordEl.textContent += randomNumbers
         //secondPasswordEl.textContent += randomNumbers
         //thirdPasswordEl.textContent += randomNumbers
@@ -84,11 +100,14 @@ function generatePasswords3() {
 }
 
 function generatePasswords4() {
-    for(let i = 0; i <= 8; i++) {
-        let randomResult = randomChars[Math.floor(Math.random()* 25)]
-        result.push(randomResult)
-        console.log(result)
-        fourthPasswordEl.textContent += randomResult
+    if (buttonClicked4 === true) {
+        for(let i = 0; i <= 8; i++) {
+            let randomResult = randomChars[Math.floor(Math.random()* 25)]
+            result.push(randomResult)
+            console.log(result)
+            fourthPasswordEl.textContent += randomResult
+            buttonClicked4 = false
+    }
         //firstPasswordEl.textContent += randomNumbers
         //secondPasswordEl.textContent += randomNumbers
         //thirdPasswordEl.textContent += randomNumbers
